@@ -1,0 +1,14 @@
+﻿using Demo_NTP.WinPhone.Resources;
+
+namespace Demo_NTP.WinPhone
+{
+    /// <summary>
+    /// Provides access to string resources.
+    /// </summary>
+    public class LocalizedStrings
+    {
+        private static AppResources _localizedResources = new AppResources();
+
+        public AppResources LocalizedResources { get { return _localizedResources; } }
+    }
+}
