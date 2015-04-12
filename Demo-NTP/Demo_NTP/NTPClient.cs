@@ -27,7 +27,7 @@ namespace Demo_NTP
                     tcs.SetResult(args.ByteData);
                 };
 
-                await socket.StartListeningAsync(11000); // any free port >1000 will do 
+                await socket.StartListeningAsync();
                 await socket.SendToAsync(ntpData, ntpServer, 123);
 
                 ntpData = await tcs.Task.TimeoutAfter(TimeSpan.FromSeconds(3));
